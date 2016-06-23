@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+/* common */
+html {
+	font-size: 62.5%;
+}
+body {
+	color: #1A1A1A;
+	margin: 0px;
+	padding: 0px;
+	background: #FFF;
+	font: 1em/1em "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+img {
+	border-style: none;
+}
+a:link {
+	color: #333;
+	text-decoration: none;
+}
+a:visited {
+	color: #666666;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #278685;
+	text-decoration: underline;
+}
+a.link_area {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-indent: -9999px;
+	background: transparent url("../../index.html");
+}
+a:hover.link_area {
+	background: #FFF;
+}
+
+/* float */
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.cb:after {
+   content:".";
+   display:block;
+   font-size:0;
+   height:0;
+   clear:both;
+   visibility:hidden;
+}
+.eof {
+	line-height: 0px;
+	clear: both;
+	height: 0px;
+	visibility: hidden;
+}
+
+/* box object */
+#header {
+	padding: 30px 0 0;
+	color: #142e3f;
+	background: #000 url("../images/img_top_bg.jpg") no-repeat center bottom;
+	background-size: cover;
+	height: 650px;
+}
+#header .inner {
+	width: 1060px;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+}
+#main {
+	padding: 5px 0 0;
+	color: #142e3f;
+	background: #FFF url("../images/bg_header.jpg") no-repeat center top;
+}
+#main .inner {
+	width: 900px;
+	position: relative;
+	margin: 0px auto;
+	padding: 0px 0px 30px;
+}
+
+/* header */
+#header .inner {
+	height: 650px;
+}
+#header .inner #main_img {
+	background: url("../images/img_top_chara.png") no-repeat center top;
+	height: 650px;
+}
+#header .inner h1 {
+	position: absolute;
+	left: 73px;
+	bottom: 10px;
+	margin: 0px;
+	padding: 0px;
+}
+#header .inner #youtube {
+	background: url("../images/bg_top_movie.png");
+	width: 270px;
+	height: 152px;
+	padding: 10px;
+	position: absolute;
+	right: 80px;
+	bottom: 10px;
+}
+html:not(:target) #header .inner #youtube {
+	background: rgba(0,0,0,0.5);
+}
+#header .inner #loading {
+	background: url("../images/loading.gif") no-repeat;
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	display: none;
+}
+
+/* #main_menu */
+#main_menu {
+	margin-bottom: 80px;
+}
+#main_menu li {
+	list-style: none;
+	float: left;
+	margin-right: 20px;
+	height: 100px;
+	width: 210px;
+}
+#main_menu li a {
+	height: 100px;
+	width: 210px;
+	display: block;
+}
+html:not(:target) #main_menu li a {
+	-moz-box-shadow: 0px 0px 12px rgba(180,252,252,0.65);
+	-webkit-box-shadow: 0px 0px 12px rgba(180,252,252,0.65);
+	box-shadow: 0px 0px 12px rgba(180,252,252,0.65);
+	-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=0,Color=#a6b4fcfc,Positive=true)";
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=0,Color=#a6b4fcfc,Positive=true);
+}
+html:not(:target) #main_menu li a:hover {
+	-moz-box-shadow:0px 0px 12px rgb(78,245,216);
+	-webkit-box-shadow:0px 0px 12px rgb(78,245,216);
+	box-shadow:0px 0px 12px rgb(78,245,216);
+	-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=0,Color=#ff4ef5d8,Positive=true)";
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=0,Color=#ff4ef5d8,Positive=true);
+}
+#main_menu .row_end {
+	margin-right: 0px;
+}
+
+/* news */
+#news {
+	margin-bottom: 25px;
+}
+#news h2 {
+	background: url("../images/bg_h2.png") no-repeat right top;
+	border-top: 2px solid #1A1A1A;
+	height: 15px;
+	margin: 0 0 30px;
+	padding: 5px 0;
+}
+#news ul {
+	width: 500px;
+	height: 600px;
+	overflow: auto;
+}
+#news ul li {
+	list-style: none;
+	font-size: 13px;
+	font-size: 1.3rem;
+	line-height: 1.5em;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #b7b7b7;
+}
+#news ul li:after {
+   content:".";
+   display:block;
+   font-size:0;
+   height:0;
+   clear:both;
+   visibility:hidden;
+}
+#news ul li span {
+	display: inline-block;
+	float: left;
+	padding: 5px 0;
+	margin: 0 10px 0 0;
+}
+#news ul li .category {
+	font-size: 11px;
+	text-align: center;
+	padding: 6px 10px;
+	background-color: #278685;
+	color: #FFFFFF;
+	width: 4.5em;
+	line-height: 1em;
+	white-space: nowrap;
+	margin-top: 3px;
+}
+#news ul li .note {
+	margin-right: 0px;
+	max-width: 500px;
+	clear: left;
+}
+#news ul li a {
+	color: #333333;
+}
+#news ul li a:hover, #news ul li a:active {
+	color: #278685;
+	text-decoration: none;
+}
+#news .tw_box {
+	width: 360px;
+}
+#re_link ul {
+	text-align: center;
+	margin: 0 auto;
+	width: 500px;
+}
+#re_link ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0px 3px;
+}
+
+/* footer area */
+#footer {
+	margin: auto;
+	text-align: center;
+	padding: 110px 10px 10px;
+	font-size: 11px;
+	font-size: 1.1rem;
+	clear: both;
+	height: 2.5em;
+	color: #FFF;
+	background: #FFF url("../images/bg_footer.jpg") no-repeat center center;
+}
+#footer #link {
+	margin-bottom: 5px;
+}
+#footer #link a {
+	color: #FFF;
+}

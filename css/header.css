@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/* #top -------------------------------------------- */
+#top {
+	background: url("../images/header-bg.png") left bottom repeat-x;
+	padding-bottom:11px;
+	position: absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	z-index:100;
+	 height:40px;
+}
+
+#top ul {
+	width:900px;
+	margin:0px auto;
+	line-height:0px;
+	font-size:0px;
+	background: #000;
+}
+
+#top ul li {
+	list-style: none;
+}
+
+#top .left {
+	width:126px;
+	padding:10px 0px 0px;
+	float: left;
+}
+
+#top .right_test {
+	width:64px;
+	float: right;
+	padding-top: 11px;
+}
+
+#top .right {
+	width:350px;
+	float: right;
+}
+
+#top .right ul {
+	width:350px;
+	padding:0px;
+	margin:0px;
+}
+
+#top .right ul li {
+	float:left;
+}
+
+#top .right ul li.social-facebook {
+	float:left;
+	width:125px;
+	padding-top:6px;
+}
+
+#top .right ul li.social-twitter {
+	float:left;
+	width:100px;
+	padding-top:6px;
+}
+
+#top .right ul li.social-mixi {
+	float:left;
+	width:90px;
+	padding-top:3px;
+}
